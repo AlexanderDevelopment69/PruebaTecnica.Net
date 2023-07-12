@@ -1,22 +1,21 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PruebaTecnica.Entity;
+using PruebaTecnica.Model;
+
 
 namespace PruebaTecnica.DB;
 
 public class ApplicationDbContext : DbContext
 {
-  
 
-/*  public ApplicationDbContext(DbContextOptions options) : base(options)
- {
-     
- }
- */
-
- protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
  {
      optionsBuilder.UseSqlite("Data Source=DataBase/DB.db");
  }
- 
+    /*  public ApplicationDbContext(DbContextOptions options) : base(options)
+    {
+        
+    }
+    */
+
  public DbSet<Movie> Movies { get; set; }
 }

@@ -10,7 +10,7 @@ using PruebaTecnica.DB;
 namespace PruebaTecnica.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230711084221_initial")]
+    [Migration("20230712015326_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -19,7 +19,7 @@ namespace PruebaTecnica.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.8");
 
-            modelBuilder.Entity("PruebaTecnica.Entity.Movie", b =>
+            modelBuilder.Entity("PruebaTecnica.Model.Movie", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()

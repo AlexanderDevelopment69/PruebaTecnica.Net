@@ -16,7 +16,7 @@ namespace PruebaTecnica.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.8");
 
-            modelBuilder.Entity("PruebaTecnica.Entity.Movie", b =>
+            modelBuilder.Entity("PruebaTecnica.Model.Movie", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()

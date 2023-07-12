@@ -1,4 +1,4 @@
-﻿namespace PruebaTecnica.Models;
+﻿namespace PruebaTecnica.Model;
 
 public class Movie
 {

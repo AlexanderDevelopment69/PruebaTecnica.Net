@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "7b81932e-8c9c-4c2e-b654-bab0240d01d9",
+		"name": ".NET APIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28457783"
+	},
+	"item": [
+		{
+			"name": "GET MOVIE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5259/api/movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5259",
+					"path": [
+						"api",
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST MOVIE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 2,\r\n  \"titulo\": \"string\",\r\n  \"director\": \"string\",\r\n  \"genero\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5259/api/movie\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5259",
+					"path": [
+						"api",
+						"movie\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT MOVIE",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GET MOVIE (ID)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5259/api/movie/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5259",
+					"path": [
+						"api",
+						"movie",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE MOVIE (ID)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5259/api/movie/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5259",
+					"path": [
+						"api",
+						"movie",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
